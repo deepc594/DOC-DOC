@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<title>Sign Up As Doc</title>
+    <style>
+	
+	body{
+	margin:0px;
+	}
+	
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  width:100%;
+  height:9%;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+	
+        input{
+            border-style: none;
+            height: 20px;
+            border-bottom: 1px solid magenta;
+            background-color: rgb(128,0,0,0);
+            color: black;
+        }
+		
+		.side1{
+		text-align:center;
+  width:33%;
+  float:left;
+  FONT-SIZE:18PX;
+		}
+		
+		.side2{
+		text-align:center;
+  width:33%;
+  float:left;
+  FONT-SIZE:18PX;
+		}
+		
+		.sidedown{
+		FONT-SIZE:18PX;
+		width:70%;
+		text-align:center;
+		}
+		
+		.side3{
+		text-align:center;
+  width:33%;
+  float:left;
+  FONT-SIZE:18PX;
+		}
+		
+		span{
+color:red;		
+		}
+		
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+<body bgcolor="#BBDEE5">
+		
+	<div class="topnav">
+ <div class="logo">
+  <a href="Homepage.html"><span><img src="finallogo.jpg"></span></a>
+ </div> 
+  <a href="compare.html">COMPARE DOCOTRS</a>
+  <a href="https://www.eraktkosh.in/BLDAHIMS/bloodbank/stockAvailability.cnt">BLOOD BANK FINDER</a>
+   <a href="http://www.mysoscare.com/book-ambulance-service/?utm_source=adword...w_adposition=1t2">AMBULANCE SERVICES</a>
+  <a href="Login.html">  LOG IN/SIGN UP</a>
+  </div>
+<br><br>
+<br><br>	
+
+
+    <h2 style="margin-left: 10%;">SIGN UP</h2>
+	<h3 style="margin-left: 10%;">AS DOCTOR</h3>
+	<BR>
+	<div class="side1">
+	<h3>PERSONAL  DETAILS</H3>
+	<form name="myform" action=""  style="font-size: 18px;margin-left: 10%;">   
+	 First Name		:&nbsp&nbsp<input type="text" placeholder="Enter First Name" align="middle" id="name" name="fname" autofocus><p id="fn"></p><br>
+	 <!--Middle Name	:&nbsp&nbsp<input type="text" placeholder="enter middle name" name="Middle Name"  ><p id="mn"></p><br> -->
+	 Last Name		:&nbsp&nbsp<input type="text" placeholder="Enter Last Name"name="Lname"  ><p id="ln"></p><br>
+     Gender         :&nbsp&nbsp<input type="radio" name="Gender" >Male
+                     <input type="radio" name="Gender" >Female
+     <br>
+     <br>
+	 Email			:&nbsp&nbsp<input type="email"  placeholder="xyz@gmail.com" name="email"><br><br>
+	 Age            : &nbsp&nbsp<input type="number" name="age"><br><br>
+	 Contact Details: &nbsp&nbsp<input type="integer" name="contact"><br><br>
+	 </div>
+	 <div class="side2">
+	 <h3>PROFESSIONAL  DETAILS</H3>
+	 Works At: &nbsp&nbsp <input type="number" name="no">&nbsp&nbsp hospitals/clinics<br><br>
+	 Name of the hospital/clinic:&nbsp&nbsp <input type="text" name="place"><br><Br>
+	 Timing&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp From:&nbsp&nbsp<input type="time" name="time">
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbspTill:&nbsp&nbsp<input type="time" name="time"><br><br>
+	 Consultation Fees:&nbsp&nbsp<input type="text" name="fees"><br><br>
+	 Doctor Registration Number: &nbsp&nbsp<input type="text" id="regno" name="regno"><br>
+	 (Enter 12-digit unique number mentioned in your degree)<br>
+	 </div>
+	 <div class="side3">
+	 <h3> EDUCATIONAL  DETAILS</H3>
+	 Degree Name: &nbsp&nbsp<input type="text" id="degree" name="degree"><br><br>
+	 From Which College:&nbsp&nbsp<input type="text" name="college"><br><BR>
+	 Passing Year:&nbsp&nbsp<input type="date" name="year"><br><br>
+     <label for="as">Specialist In
+        &nbsp&nbsp<datalist id="as">
+         <option value="General Doctor" >General Doctor</option>
+         <option value="Eye Specialist" >Eye Specialist</option>
+         <option value="Dental Care" >Dental Care</option>
+         <option value="Heart Specialist" >Heart Specialist</option>
+         <option value="Cancer Specialist" >Cancer Specialist</option>
+         </datalist>
+         <input type=text name="as" list="as" placeholder="Specialist In"> 
+        </label><br><br><BR><bR><BR><BR>
+   </div>
+<!--
+       Address:<br> <textarea rows="10" cols="50"  style="width: 300px;border-style: none;
+        
+            border-bottom: 1px solid magenta;
+            background-color: rgb(128,0,0,0.1);
+            color: black;"></textarea><br><br>
+-->
+<div class="sidedown">
+<input type="submit" value="submit" id="cv" />	 </form>
+</div>
+<script>
+$(document).ready(function()
+{ $("form").submit(function(e)
+            { e.preventDefault();                                                    
+            var x =$('#name').val();
+            if(x==null || x=='')
+                {
+                    $('[name="fname"]').after('<span>Required</span>');
+                    
+
+                }
+             var y = $('[name="degree"]').val();
+            if(y=='' || y == null)
+                {
+                    $('[name="degree"]').after('<span>Required</span>');
+                }
+             var z = $('[name="Lname"]').val();
+            if(z=='' || z == null)
+                {
+                   $('[name="Lname"]').after('<span>Required</span>');
+                }
+            
+       
+        
+            /* var em = $('[name="email"]').val();
+                if(em==null || em=='')
+                {$('[name="email"]').after('<span> Required</span>');
+                }
+                
+                var reg = /\w+@(somaiya.edu|gmail.com)/;
+                
+                if(!reg.test(e))
+                   {
+                 $('[name="email"]').after('<span>Invalid email address </span>');
+
+                   }*/
+            
+            var ph = $('[name="contact"]').val();
+                var regno = /[1-9][0-9]{9}/;
+            if(!regno.test(ph))
+                {
+                    $('[name="contact"]').after('<span>Incorrect phone number</span>');
+                }
+				
+				 /* var b = $('[name="regno"]').val();
+                var regno = /[1-9][0-9][a-z][A-Z]{11}/;
+            if(!regno.test(b))
+                {
+                    $('[name="regno"]').after('<span>Incorrect Registration Number</span>');
+                }*/
+				
+              })})
+			  
+		
+			  
+        </script>
+</body>
+    </html>

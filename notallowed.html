@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="constant.css">
+<style>
+
+body {
+  margin: 0px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  width:100%;
+  height:9%;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.bottomnav {
+  overflow: hidden;
+  background-color: #333;
+  position:absolute;
+  width:100%;
+  height:7%;
+}
+.bottomnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.centernav {
+  overflow: hidden;
+  background-color: #333;
+  position:absolute	;
+  width:100%;
+  height:7%;
+}
+.centernav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.centernav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.right{
+  text-align:center;
+  width:45%;
+  float:left;
+  padding:15px;
+}
+
+.left{
+
+  width:45%;
+  float:left;
+  padding:15px;
+}
+
+img {
+border-radius:50%;
+}
+
+.name{
+font-variant:small-caps;
+font-size:20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.book{
+background:#BDF51A;
+width:48%;
+text-variant:small-caps;
+font-size:16px;
+border-style:solid;
+text-align:center;
+}
+
+p{
+text-variant:small-caps;
+font-size:20px;
+}
+button{
+height:20px;
+width:70px;
+}
+a{
+text-decoration:none;
+}
+
+.back{
+opacity:0.3;
+z-index:-1;
+}
+.front{
+  color:red;
+  background-color:#8DF0C3;
+  width: 300px;
+  border: 5px solid red;
+  padding: 25px;
+  margin: 25px;
+  float:left;
+  overflow: hidden;
+  position:absolute;
+  font-size:20px;
+  z-index:1;
+  text-align:center;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  right:500px;
+ 
+}
+
+.front a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:red;
+  display: inline-block
+
+}
+
+.front a:hover {
+  background-color: #ddd;
+  color: black;
+  display: inline-block;
+}
+ 
+</style>
+<title> Give Feedback</title>
+</head>
+
+<body>
+<div class="back">
+<div class="topnav">
+ <div class="logo">
+  <a href="Homepage.html"><span><img src="finallogo.jpg"></span></a>
+ </div> 
+  <a href="compare.html">COMPARE DOCOTRS</a>
+  <a href="https://www.eraktkosh.in/BLDAHIMS/bloodbank/stockAvailability.cnt">BLOOD BANK FINDER</a>
+   <a href="http://www.mysoscare.com/book-ambulance-service/?utm_source=adword...w_adposition=1t2">AMBULANCE SERVICES</a>
+  <a href="Login.html">  LOG IN/SIGN UP</a>
+  </div>
+  <br><br><br>  <br><br><br>
+<div class="centernav">
+  <a href="ozafeedbackclinic.html">Clinic </a>
+  <a href="ozafeedbackgovt.html">Kamgar Hospital</a>
+  <a href="ozafeedbackprivate.html">City Hospital</a>
+  </div>
+
+<br><br><Br>
+<div class="left">
+ <img src="GD3.jpg" height="150px"></img><br><br>
+
+  <div class="name">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Dr. OZA</div>
+<br>
+
+ <p> City Hospital:
+   &nbsp  90 Feet road, near XYZ hotel, Ghatkopar(E).<br><br>
+  Clinic Phone No.: &nbsp 0789456123<br><br>
+  Rating: </p>
+  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+  
+</div>
+</div>
+<!-- Login tab starts from here-->
+
+<div class="front">
+You have to LogIn to submit the feedback..!!<br>
+<div class="frow1">
+  <div class="fc1">
+  <a href="loginnew.html">LOGIN
+  </a>
+  </div>
+  <div class="fc2">
+  <a href="signupgeneral.html">SIGNUP<BR>
+  </a>
+  </div>
+</div>
+<BR><BR><BR>
+<div class="frow2">
+ <div class="form"> 
+ Username:
+ <input type="text" placeholder="abc13@gmail.com" name="username"><br><br>
+ Password:
+ <input type="text" placeholder="*******" name="password">
+ <br><br>
+ <input type="submit">
+ </div>
+
+</div>
+
+</div>
+<!-- Login tag ends here-->
+
+<div class="back">
+<br><br><Br><br><Br><br><Br><br>
+<div class="right">
+&nbsp&nbsp&nbsp&nbsp Write Your Feedback:<br>
+<br>
+&nbsp&nbsp&nbsp&nbsp
+<textarea rows="6" cols="70">
+Give your Review / Feedback for Dr. OZA according to your experience at City Hospital.
+</textarea>
+<br>
+<center>
+<button type="submit"><a href="">SUBMIT</a></button>
+</center>
+</div>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
+  <div class="bottomnav">
+  <a href="#home" class="active">About Us</a>
+  <a href="#news">Contact Us</a>
+<br>
+</div>
+</div>
+
+
+
+
+</body>
+
+</html>
